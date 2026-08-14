@@ -119,6 +119,35 @@
             text-decoration: none;
             box-shadow: 2px 2px 0px var(--border-color);
         }
+        #imgs{
+            display: flex;
+            flex-direction: column;
+        }
+        #imgs p{
+            margin: 0px;
+        }
+        #ga{
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+/* ✦SVG*/
+        #ga::before,
+        #ga::after {
+            content: "";
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-color: currentColor; 
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"/></svg>');
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"/></svg>');
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+            mask-size: contain;
+        }
     </style>
 </head>
 <body>
@@ -126,9 +155,11 @@
         <h1>2027方舟カレンダー</h1><br>
         <div id="theme">
             <p>今年のテーマは</p><br>
-            <h2>太陽系 × 装飾</h2><hr>
-            <p class="f-s" style="color: var(--sub-text);">太陽・水・金・地・月・火・木・土・天・海・冥<br>※外部に見せられるものを製作してください</p>
+            <h2>太陽系 × 装飾</h2>
         </div>
+        <details>
+            <summary>詳細</summary>
+        
         <div id="2027">
             <h3>今年の変更点</h3>
             <ul>
@@ -157,7 +188,7 @@
             </ul>
         </div>
         <div id="DL">
-            <h3>DLするもの ※終了しました</h3>
+            <h3>DLするもの ※準備中!!!!</h3>
             <div class="bottom">
             <a>カレンダーのテンプレート</a>
             </div>
@@ -191,6 +222,24 @@
                 <li>住所記入</li>
                 <li>納金・住所記入報告</li>
             </ul>
+        </div>
+        </details><br>
+        <div id="gallery">
+            <h1>ご参加いただき、ありがとうございました！</h1>
+            <p id="ga">GALLERY</p>
+            <div id="imgs">
+            <img src=""><p>太陽 by </p>
+            <img src=""><p>水星 by </p>
+            <img src=""><p>金星 by </p>
+            <img src=""><p>地球 by </p>
+            <img src=""><p>月 by </p>
+            <img src=""><p>火星 by </p>
+            <img src=""><p>木星 by </p>
+            <img src=""><p>土星 by </p>
+            <img src=""><p>天星 by </p>
+            <img src=""><p>海星 by </p>
+            <img src=""><p>冥星 by </p>
+            </div>
         </div>
     </main>
 </body>
