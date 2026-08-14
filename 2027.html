@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2027方舟カレンダー</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        :root {
+            --bg-body: #b8b8b8;
+            --bg-card: #e5e5e5;
+            --border-color: #1a1a1a;
+            --text-color: #1a1a1a;
+            --accent-bg: #1a1a1a;
+            --accent-text: #ffffff;
+            --btn-bg: #f4f4f4;
+            --sub-text: #cccccc;
+        }
+        body {
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 20px 10px;
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        main {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 28px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.25);
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+            letter-spacing: 0.05em;
+        }
+        #theme {
+            color: var(--accent-text);
+            background-color: var(--accent-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            box-shadow: 2px 3px 0px rgba(0,0,0,0.2);
+        }
+        #theme p {
+            margin: 4px 0;
+        }
+        #theme h2 {
+            margin: 8px 0 35px 0;
+            font-size: 1.8rem;
+        }
+        .f-s {
+            font-size: x-small;
+            line-height: 1.5;
+        }
+        h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            border-left: 5px solid var(--border-color);
+            padding-left: 10px;
+            line-height: 1.2;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 8px 0 16px 0;
+        }
+        li {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        #DL {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px dashed #999999;
+        }
+        #DL p {
+            font-weight: bold;
+            margin-top: 14px;
+            margin-bottom: 8px;
+        }
+        #DL > a {
+            display: inline-block;
+            padding: 6px 16px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 4px;
+            background-color: var(--accent-bg);
+            color: var(--accent-text);
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 2px 2px 0px var(--border-color);
+        }
+        .bottom {
+            line-height: 2.4;
+            margin-top: 8px;
+        }
+        .bottom a {
+            display: inline-block;
+            padding: 2px 18px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 4px;
+            margin-left: 0px;
+            margin-right: 10px;
+            background-color: var(--btn-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            box-shadow: 2px 2px 0px var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>2027方舟カレンダー</h1><br>
+        <div id="theme">
+            <p>今年のテーマは</p><br>
+            <h2>太陽系 × 装飾</h2><hr>
+            <p class="f-s" style="color: var(--sub-text);">太陽・水・金・地・月・火・木・土・天・海・冥<br>※外部に見せられるものを製作してください</p>
+        </div>
+        <div id="2027">
+            <h3>今年の変更点</h3>
+            <ul>
+                <li>ポストカード形式</li>
+                <li>印刷代¥453</li>
+                <li>キャラを代理で固定</li>
+                <li>キャラデザは表紙に使用しますので、別途ご提出ください</li>
+                <li>各月の日付をデザインします(HIC_SHIが担当)<br>その為、日付見本が必要になります</li>
+            </ul>
+        </div>
+        <div id="attention">
+            <h2>注意点</h2>
+            <ul>
+                <li>データ締め切り：2026.12.7</li>
+                <li>テンプレートが変わります</li>
+                <li>日付の見本を縮小しないでください</li>
+            </ul>
+        </div>
+        <div id="upload">
+            <h3>提出するもの</h3>
+            <ul>
+                <li>イラストのみ</li>
+                <li>日付見本とイラスト</li>
+                <li>キャラクターデザイン案(ラフOK)<p style="font-size: x-small; margin-top: 0px;">※11月30日まで</p></li>
+                <li>印刷代+郵送料(¥385)+匿名料(¥110)</li>
+            </ul>
+        </div>
+        <div id="DL">
+            <h3>DLするもの ※終了しました</h3>
+            <div class="bottom">
+            <a>カレンダーのテンプレート</a>
+            </div>
+            <p>日付見本</p>
+            <div class="bottom">
+            1列 <a >縦</a><a >横</a><br>
+            2列 <a >縦</a><a >横</a><br>
+            4列 <a >縦</a><a >横</a><br>
+            </div>
+        </div><br>
+        <hr>
+        <div id="">
+            <h3>その他</h3>
+            <ul>
+                <li>担当月の投票</li>
+                <li>表紙の構図の相談</li>
+            </ul>
+            <h3 style="margin-top: 8px;"><strong>相談したいこと</strong></h3>
+            <p> 方舟のカレンダーを販売したい！<br>boothとか、コミティアとか、、<br><span class="f-s">もし売上が出たら、製作者に平等に分配するつもりです。</span></p>
+        </div>
+        <hr>
+        <div id="">
+            <h3>ToDo</h3>
+            <ul>
+                <li>担当月の投票</li>
+                <li>キャラクターデザイン</li>
+                <li>担当月のイラスト制作</li>
+                <li>キャラデザ提出※11/30</li>
+                <li>日付見本付とイラストのみのデータを提出※12/7</li>
+                <li>納金※12/7<br><span class="f-s">印刷代:¥453 送料:¥385 匿名料:¥110</span></li>
+                <li>住所記入</li>
+                <li>納金・住所記入報告</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
